@@ -1,0 +1,50 @@
+<ui:composition template="/WEB-INF/template/layout.xhtml"
+        xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+     xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:define name="title">Cadastrar produto</ui:define>
+
+    <ui:define name="corpo">
+        <h1>Novo Produto</h1>
+
+        <p:toolbar id="tool-cad-produto" style="margin-top: 20px">
+            <p:toolbarGroup id="tool-group1">
+                <p:button id="bt-novo" value="Novo" outcome="/produtos/cadastro-produto.xhtml" style="margin-left: 10px"/>
+                <p:commandButton id="bt-salvar" value="Salvar"/>
+            </p:toolbarGroup>
+
+            <p:toolbarGroup id="tool-group2" align="right">
+                <p:button value="Pesquisar" id="bt-pesquisar"/>
+            </p:toolbarGroup>
+        </p:toolbar>
+
+        <p:panelGrid id="painel" columns="2" style="width: 100%;margin-top: 20px">
+            <p:outputLabel value="SKU" for="sku" styleClass="campo-rotulo"/>
+            <p:inputText id="sku" size="20"/>
+
+            <p:outputLabel value="Nome" for="nome"/>
+            <p:inputText id="nome" size="60" maxlength="80"/>
+
+            <p:outputLabel value="Categoria" for="categoria"/>
+            <p:selectOneMenu id="categoria">
+                <f:selectItem itemLabel="Selecione uma categoria" noSelectionOption="true"/>
+            </p:selectOneMenu>
+
+            <p:outputLabel value="Subcategoria" for="sub-categoria"/>
+            <p:selectOneMenu id="sub-categoria">
+                <f:selectItem itemLabel="Selecione um subcatergoria"/>
+            </p:selectOneMenu>
+
+            <p:outputLabel value="Valor unitário" for="valor_unitario"/>
+            <p:inputText id="valor_unitario" size="10" maxlength="10" styleClass="moeda"/>
+
+            <p:outputLabel value="Quantidade em estoque" for="qtd_estoque"/>
+            <p:inputText id="qtd_estoque" />
+
+        </p:panelGrid>
+
+    </ui:define>
+</ui:composition>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Login</title>
+    <h:outputStylesheet library="css" name="estilos.11.css"/>
+</h:head>
+<h:body id="tudo-login">
+    <div>
+        <div id="div-login">
+            <h1>Login</h1>
+            <h:form id="frm-login">
+                <h:panelGrid columns="2" id="painel-login" styleClass="grid-login">
+                    <p:outputLabel value="Email" for="email"/>
+                    <p:inputText id="email" size="30"/>
+                    <p:outputLabel value="Senha" for="senha"/>
+                    <p:password id="senha" size="30"/>
+                    <p:outputLabel/>
+                    <p:commandButton value="login" id="btn-login"/>
+                </h:panelGrid>
+            </h:form>
+        </div>
+    </div>
+</h:body>
+</html>
