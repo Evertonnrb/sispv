@@ -1,0 +1,63 @@
+<ui:composition template="/WEB-INF/template/layout.xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://java.sun.com/jsf/html">
+
+    <ui:define name="title">Consultar produtos</ui:define>
+
+    <ui:define name="corpo">
+        <h:form id="frm-pesquisa">
+
+            <p:toolbar id="tool-pesquisa" style="margin-top: 20px">
+                <p:toolbarGroup id="tool-group-pesquisa">
+                    <p:button id="bt-novo" value="Novo" outcome="/produtos/cadastro-produto.xhtml"/>
+                    <p:commandButton id="salvar-produto" value="Salvar"/>
+                </p:toolbarGroup>
+
+                <p:toolbarGroup id="tool-group-pesquisa2" align="right">
+                    <p:button id="pesquisa-produto" value="Pesquisar"/>
+                </p:toolbarGroup>
+            </p:toolbar>
+
+            <p:panelGrid id="painel-consulta" columns="2" style="margin-top: 20px">
+                <p:outputLabel value="SKU" for="sku"/>
+                <p:inputText id="sku" size="20"/>
+
+                <p:outputLabel value="Nome" for="nome"/>
+                <p:inputText id="nome" size="60"/>
+            </p:panelGrid>
+
+            <p:dataTable id="pesquisa-tabela" value="#{pesquisaProdutosBean.produtosFiltrados}"
+                var="produto" style="margin-top: 20px" emptyMessage="Nenhum produto encontrado"
+            rows="20" paginator="true" paginatorAlwaysVisible="false">
+
+                <p:column headerText="SKU" style="text-align: center">
+                    <h:outputText value="123"/>
+                </p:column>
+
+                <p:column headerText="Nome" style="text-align: center;">
+                    <h:outputText value="nome de usuario"/>
+                </p:column>
+
+                <p:column headerText="Categoria" style="text-align: center;">
+                    <h:outputText value="categoria"/>
+                </p:column>
+
+                <p:column headerText="Valor unitario" style="text-align: center;">
+                    <h:outputText value="R$ valor unitario"/>
+                </p:column>
+
+                <p:column headerText="Estoque" style="text-align: center;">
+                    <h:outputText value="100"/>
+                </p:column>
+
+                <p:column headerText="Estoque" style="width: 100px;align:center">
+                    <p:button icon="ui-icon-pencil" title="Editar"/>
+                    <p:commandButton icon="ui-icon-trash" title="Excluir"/>
+                </p:column>
+
+            </p:dataTable>
+
+        </h:form>
+    </ui:define>
+</ui:composition>

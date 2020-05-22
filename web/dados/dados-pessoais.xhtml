@@ -1,0 +1,56 @@
+<ui:composition template="/WEB-INF/template/layout.xhtml"
+        xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:define name="title">Dados pessoais</ui:define>
+
+    <ui:define name="corpo">
+        <h:form id="frm-tab">
+            <p:tabView orientation="left" dynamic="true">
+                <p:tab title="Dados Pessoais">
+                    <h:panelGrid id="painel-tab" columns="2">
+                        <p:outputLabel value="Nome" for="nome"/>
+                        <p:inputText id="nome"/>
+                        <p:outputLabel value="RG" for="rg"/>
+                        <p:inputText id="rg"/>
+                        <p:outputLabel value="CPF" for="cpf"/>
+                        <p:inputText id="cpf"/>
+                        <p:outputLabel value="Telefone" for="telefone"/>
+                        <p:inputText id="telefone"/>
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="Endereço">
+                    <h:panelGrid id="painel-tab2" columns="2">
+                        <p:outputLabel value="CEP" for="cep"/>
+                        <p:inputText id="cep"/>
+                        <p:outputLabel value="Bairro" for="bairro"/>
+                        <p:inputText id="bairro"/>
+                        <p:outputLabel value="Rua" for="rua"/>
+                        <p:inputText id="rua"/>
+                        <p:outputLabel value="Número" for="numero"/>
+                        <p:inputText id="numero"/>
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="Funcionarios">
+                    <p:dataTable>
+                        <p:column headerText="Matricula">
+                            <h:outputText value="Matricula"/>
+                        </p:column>
+                        <p:column headerText="Nome">
+                            <h:outputText value="Nome"/>
+                        </p:column>
+                        <p:column headerText="Data Admissao">
+                            <h:outputText value="Data admissão"/>
+                        </p:column>
+                        <p:column headerText="Salário">
+                            <h:outputText value="salário"/>
+                        </p:column>
+                    </p:dataTable>
+                </p:tab>
+            </p:tabView>
+        </h:form>
+    </ui:define>
+</ui:composition>

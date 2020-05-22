@@ -6,7 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da44cde9-65f7-4c9d-97b3-cd9e30a30800" name="Default Changelist" comment="" />
+    <list default="true" id="da44cde9-65f7-4c9d-97b3-cd9e30a30800" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sispv/WEB-INF/template/layout.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sispv/WEB-INF/template/layout.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sispv/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sispv/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sispv/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sispv/login.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sispv/produtos/cadastro-produto.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sispv/produtos/cadastro-produto.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sispv/resources/css/estilos.11.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/template/layout.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/template/layout.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/produtos/cadastro-produto.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/estilos.11.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/estilos.14.css" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +30,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="jsf" />
         <option value="JavaScript File" />
+        <option value="Class" />
+        <option value="jsf" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -37,7 +54,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1cF8WeHcdfZhlmxTwh5bkyIKLO1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/resources/images" />
@@ -151,11 +172,22 @@
       <option name="presentableId" value="Default" />
       <updated>1590113013216</updated>
       <workItem from="1590113017877" duration="2709000" />
-      <workItem from="1590127753566" duration="5966000" />
+      <workItem from="1590127753566" duration="12546000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

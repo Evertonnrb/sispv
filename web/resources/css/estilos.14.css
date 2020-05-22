@@ -56,6 +56,14 @@ footer{
     margin-top: 200px;
     padding: 0px 8px;
 }
+
+.botoes{
+    background-color: #1E90FF;
+    color: #DCDCDC;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
 .campo-rotulo{
     width: 180px;
 }

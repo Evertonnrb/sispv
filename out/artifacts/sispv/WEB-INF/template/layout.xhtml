@@ -7,12 +7,12 @@
       xmlns:p="http://primefaces.org/ui">
 <h:head>
     <title><ui:insert name="title">Sistema</ui:insert></title>
-    <h:outputStylesheet library="css" name="estilos.11.css"/>
+    <h:outputStylesheet library="css" name="estilos.14.css"/>
     <h:outputScript library="js" name="jquery.js"/>
     <h:outputScript library="js" name="maskmoney.js"/>
 </h:head>
 <h:body>
-    <p:ajaxStatus id="ajax-status" styleClass="ajax-status">
+    <p:ajaxStatus id="ajax-status" styleClass="ajax-status" onsuccess="configurarMoeda()">
         <f:facet name="start">
             <h:graphicImage library="images" name="load.gif"/>
         </f:facet>
