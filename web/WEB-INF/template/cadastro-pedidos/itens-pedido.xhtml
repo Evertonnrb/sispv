@@ -1,0 +1,35 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <p:dataTable value="" var="" id="tabela-itens">
+
+        <p:column headerText="SKU" style="text-align: center;width: 80px">
+            <p:inputText size="5"/>
+        </p:column>
+        <p:column headerText="Produto">
+            <p:autoComplete />
+        </p:column>
+        <p:column headerText="Valor Unitário">
+            <p:inputText />
+        </p:column>
+        <p:column headerText="Quantidade">
+            <p:inputText size="5"/>
+        </p:column>
+        <p:column headerText="Estoque">
+            <p:inputText size="5"/>
+        </p:column>
+        <p:column headerText="Valor Total">
+            <h:outputText value="R$ 0,00"/>
+        </p:column>
+        <p:columnGroup type="footer">
+            <p:row>
+                <p:column colspan="5" footerText="Subtotal" style="text-align: right"/>
+                <p:column footerText="R$ 0,00" style="text-align: right"/>
+            </p:row>
+        </p:columnGroup>
+    </p:dataTable>
+
+</ui:composition>

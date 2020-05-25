@@ -28,8 +28,8 @@
             </p:panelGrid>
 
             <p:dataTable id="pesquisa-tabela" value="#{pesquisaProdutosBean.produtosFiltrados}"
-                var="produto" style="margin-top: 20px" emptyMessage="Nenhum produto encontrado"
-            rows="20" paginator="true" paginatorAlwaysVisible="false">
+                         var="produto" style="margin-top: 20px" emptyMessage="Nenhum produto encontrado"
+                         rows="20" paginator="true" paginatorAlwaysVisible="false">
 
                 <p:column headerText="SKU" style="text-align: center">
                     <h:outputText value="123"/>
@@ -53,11 +53,15 @@
 
                 <p:column headerText="Estoque" style="width: 100px;align:center">
                     <p:button icon="ui-icon-pencil" title="Editar"/>
-                    <p:commandButton icon="ui-icon-trash" title="Excluir"/>
+                    <p:commandButton icon="ui-icon-trash" title="Excluir" action="confirmarExclusao.show();"/>
                 </p:column>
-
             </p:dataTable>
-
+            <p:confirmDialog header="Exclusão de produto" id="confirmarExclusao"
+                             visible="true "
+                             rendered="true" message="Tem certeza que deseja excluir?" widgetVar="confirmarExclusao">
+                <p:button value="Não" onclick="confirmarExclusao.hide(); return false"/>
+                <p:commandButton value="Sim" actionListener="confirmarExclusao.hide();"/>
+            </p:confirmDialog>
         </h:form>
     </ui:define>
 </ui:composition>

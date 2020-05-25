@@ -7,7 +7,7 @@
       xmlns:p="http://primefaces.org/ui">
 <h:head>
     <title><ui:insert name="title">Sistema</ui:insert></title>
-    <h:outputStylesheet library="css" name="estilos.14.css"/>
+    <h:outputStylesheet library="css" name="estilos.15.css"/>
     <h:outputScript library="js" name="jquery.js"/>
     <h:outputScript library="js" name="maskmoney.js"/>
 </h:head>
@@ -21,11 +21,33 @@
         </f:facet>
     </p:ajaxStatus>
     <header>
-        <div>
+        <div style="float: left">
             <h:link>
                 <!--<h:graphicImage library="images"/>-->
             </h:link>
         </div>
+        <div style="float: right;margin-left: 110px">
+            <span style="float: left;margin-left: -160px">
+                <p>Olá Usuário</p>
+            </span>
+            <h:form style="display: inline-block;margin-right: 50px">
+                <p:menubar styleClass="menu-sistema">
+                    <p:submenu label="Cadastros">
+                        <p:menuitem value="Clientes"/>
+                        <p:menuitem value="Usuário"/>
+                        <p:separator/>
+                        <p:menuitem value="Categorias"/>
+                        <p:menuitem value="Produtos" outcome="/produtos/cadastro-produto"/>
+                    </p:submenu>
+                    <p:submenu label="Pedidos">
+                        <p:menuitem value="Pedidos" outcome="/pedidos/cadastro-pedidos"/>
+                        <p:menuitem value="Pesquisa" outcome="/pedidos/pesquisa-pedidos"/>
+                    </p:submenu>
+                    <p:menuitem value="Sair"/>
+                </p:menubar>
+            </h:form>
+        </div>
+        <div style="clear: both"></div>
     </header>
     <div id="conteudo">
         <ui:insert name="corpo"/>

@@ -1,0 +1,46 @@
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <p:panelGrid columns="4" style="width: 100%;margin-top: 20px;" columnClasses="campo-rotulo">
+
+        <p:outputLabel value="Número"/>
+        <h:outputText value="12345"/>
+
+        <p:outputLabel value="Data Criação"/>
+        <h:outputText value="12/04/2020"/>
+
+        <p:outputLabel value="Status"/>
+        <h:outputText value="OK"/>
+
+        <p:outputLabel value="Vendedor"/>
+        <p:selectOneMenu >
+            <f:selectItem itemLabel="Selecione" for="vendedor"/>
+            <f:selectItem itemLabel="Jão das neves" id="vendedor"/>
+        </p:selectOneMenu>
+
+        <p:outputLabel value="Cliente"/>
+        <p:autoComplete id="cliente" size="40" dropdown="true"/>
+
+        <p:outputLabel value="Forma de pagamento" for="frm-pagamento"/>
+        <p:selectOneMenu id="frm-pagamento">
+            <f:selectItem itemLabel="Cartão"/>
+            <f:selectItem itemLabel="Dinheiro"/>
+        </p:selectOneMenu>
+
+        <p:outputLabel value="Valor do  frete"/>
+        <p:inputText value="R$ 0,00"/>
+
+        <p:outputLabel value="Subtotal" style="font-weight: bold"/>
+        <h:outputText value="R$ 0,00" style="font-weight: bold"/>
+
+        <p:outputLabel value="Valor Total" style="font-weight: bold"/>
+        <h:outputText value="R$ 0,00" style="font-weight: bold"/>
+
+
+    </p:panelGrid>
+
+</ui:composition>

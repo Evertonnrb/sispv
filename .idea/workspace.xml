@@ -7,18 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da44cde9-65f7-4c9d-97b3-cd9e30a30800" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/sispv/WEB-INF/template/layout.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sispv/WEB-INF/template/layout.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sispv/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sispv/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/sispv/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sispv/login.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sispv/produtos/cadastro-produto.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sispv/produtos/cadastro-produto.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sispv/resources/css/estilos.11.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sispv.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sispv.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sispv/bean/PesquisaProdutosBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sispv/bean/PesquisaProdutosBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/template/layout.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/template/layout.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/produtos/cadastro-produto.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/estilos.11.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/estilos.14.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pedidos/consulta-pedidos.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pedidos/pesquisa-pedidos.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/produtos/pesquisa-produto.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/produtos/pesquisa-produto.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/estilos.14.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/estilos.15.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,11 +63,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/resources/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF/template/cadastro-pedidos" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/resources/images" />
     </key>
@@ -172,7 +175,11 @@
       <option name="presentableId" value="Default" />
       <updated>1590113013216</updated>
       <workItem from="1590113017877" duration="2709000" />
-      <workItem from="1590127753566" duration="12546000" />
+      <workItem from="1590127753566" duration="12880000" />
+      <workItem from="1590190265552" duration="593000" />
+      <workItem from="1590319540931" duration="2813000" />
+      <workItem from="1590366370512" duration="759000" />
+      <workItem from="1590395097563" duration="11592000" />
     </task>
     <servers />
   </component>
@@ -184,7 +191,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

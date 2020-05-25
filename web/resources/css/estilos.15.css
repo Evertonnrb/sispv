@@ -1,50 +1,68 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-*{
+
+* {
     font-family: 'Ubuntu', sans-serif;
 }
-body{
+
+body {
     font-size: 14px;
     font-weight: normal;
     margin: 0px;
 }
-header{
-    padding:5px 0;
+
+header {
+    padding: 5px 0;
     margin-bottom: 20px;
     height: 50px;
     background-color: #545454;
     color: #fff;
-    box-shadow: 0px 2px 2px rgba(0,0,0,.2);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .2);
 }
-header > div{
+
+header > div {
     left: 8px;
 }
-p{
+
+p {
     font-size: 12px;
 }
-#conteudo{
+
+#conteudo {
     padding: 0px 8px;
 }
+
 /*login*/
-#div-login{
+#div-login {
     width: 550px;
     height: 400px;
     margin: auto;
     margin-top: 150px;
 }
-#frm-login{
+
+#frm-login {
     width: 400px;
     height: 400px;
 }
-h1{
+
+h1 {
     text-transform: uppercase;
     font-weight: bold;
 }
-#tudo-login{
+
+p {
+    text-transform: uppercase;
+    font-weight: bolder;
+    height: 14px;
+    color: #fafafa;
+}
+
+#tudo-login {
     background-color: #bebebe;
 
 }
-.grid-login{
+
+.grid-login {
     background-color: #fafafa;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -52,30 +70,41 @@ h1{
     padding: 10px;
     margin: 5px;
 }
-footer{
+
+footer {
     margin-top: 200px;
     padding: 0px 8px;
 }
 
-.botoes{
+.botoes {
     background-color: #1E90FF;
     color: #DCDCDC;
     border-radius: 5px;
     text-transform: uppercase;
 }
 
-.campo-rotulo{
+.campo-rotulo {
     width: 180px;
 }
-.ajax-status{
+
+.ajax-status {
     position: fixed;
     top: 75px;
-    right:15px;
+    right: 15px;
     width: 40px;
     height: 40px;
 }
 
+.menu-sistema {
+    border: 0;!important;
+    padding: 0;!important;
+    background: none;!important;
+}
+.menu-sistema .ui-menu-parent > a .ui-menuitem-text, .menu-sistema > ui.menu-list > .ui-menuitem > a, .ui-menuitem-text {
+    color: #FFF;
+}
+
 /*classes primefaces*/
-.ui-panelgrid td{
+.ui-panelgrid td {
     height: 34px;
 }
